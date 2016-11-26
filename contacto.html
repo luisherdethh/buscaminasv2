@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html manifest="cache.appcache">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Juego de Buscaminas">
+    <meta name="author" content="Luis Herdeth">
+    <meta name="keywords" content="Buscaminas">
+    <title>Contacto</title>
+</head>
+<body>
+    <!-- Menú -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Index</a></li>
+            <li><a href="juego.html">Juego</a></li>
+            <li><a href="ayuda.html">Ayuda</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="configuracion.html">Configuración</a></li>
+        </ul>
+    </nav>
+    <!-- Fin del Menú -->
+    <!-- Container (Contenido principal) -->
+    <main>
+        <section>
+            <h1>Contacto</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, excepturi aperiam dicta at, sapiente earum eligendi a saepe, ut ullam quam possimus provident suscipit deleniti ipsa modi doloremque itaque omnis.</p>
+            <!-- Mapa -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3074.9291060339647!2d2.650634715271025!3d39.58374811379976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129792f93ba1c341%3A0x9adaa8db4e56aa22!2sCarrer+d&#39;Alfons+el+Magn%C3%A0nim%2C+15%2C+07004+Palma%2C+Illes+Balears!5e0!3m2!1ses!2ses!4v1475856996540" width="600" height="450" allowfullscreen>
+            </iframe>
+            <!-- Fin mapa -->
+        </section>
+        <section>
+            <!-- Formulario -->
+            <h2>Formulario</h2>
+            <form method="post" action="contacto.html">
+                <label for="name">Nombre</label>
+                <input type="text" name="firstname" id="name" size="50" placeholder="Tu nombre" required>
+                <label for="lastname">Apellidos</label>
+                <input type="text" name="lastname" id="lastname" size="50" placeholder="Apellidos" required>
+                <label for="mail">Email(required)</label>
+                <input type="email" name="Email" id="mail" size="50" placeholder="Email valido" required>
+                <!-- Con el atributo "multiple", podemos elegir más de un archivo -->
+                <input type="file" id="archivo" name="file" multiple>
+                <label>Motivo</label>
+                <select>
+                    <option value="profesional">Motivo Profesional</option>
+                    <option value="personal" selected>Motivo Personal</option>
+                </select>
+                <label>Mensaje</label>
+                <textarea name="message" placeholder="Mensaje"></textarea>
+                <input type="checkbox" name="terminos" id="lopd">Aceptar términos y condiciones
+                <input type="reset" value="Reset">
+                <input type="submit" value="Enviar">
+            </form>
+            <!-- Fin Formulario -->
+        </section>
+    </main>
+    <!-- Fin del Container -->
+</body>
+</html>
